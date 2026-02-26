@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+    <script type="module" src="/src/main.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <div class="topbar">
+        <label class="theme-label" for="themeSelect">Theme</label>
+        <select id="themeSelect" aria-label="Theme selector">
+          <option value="latte">Latte</option>
+          <option value="frappe">Frappe</option>
+          <option value="macchiato">Macchiato</option>
+          <option value="mocha">Mocha</option>
+        </select>
+      </div>
+
+      <p id="modeLabel" class="mode" aria-live="polite">FOCUS</p>
+      <p id="timeDisplay" class="time" aria-live="polite">25:00</p>
+      <p id="runningIndicator" class="running-indicator" aria-live="polite">
+        <span class="dot" aria-hidden="true"></span>
+        <span id="runningText">Paused</span>
+      </p>
+
+      <div class="row primary-actions">
+        <button id="startBtn" type="button">Start</button>
+        <button id="pauseBtn" type="button">Pause</button>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+
+      <div class="row mode-actions">
+        <button id="focusBtn" type="button">Focus 25</button>
+        <button id="breakBtn" type="button">Break 5</button>
+      </div>
+
+      <p id="statusText" class="status" aria-live="polite"></p>
+    </main>
+  </body>
+</html>

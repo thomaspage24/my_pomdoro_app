@@ -1,0 +1,21 @@
+{
+  "name": "pomodoro-tauri",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.8.0",
+    "@tauri-apps/plugin-fs": "^2.4.1",
+    "@tauri-apps/plugin-notification": "^2.3.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.5",
+    "vite": "^7.1.5"
+  }
+}
